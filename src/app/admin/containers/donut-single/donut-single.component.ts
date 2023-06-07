@@ -3,8 +3,12 @@ import { ActivatedRoute, Router } from '@angular/router';
 
 import { Donut } from '../../models/donut.model';
 import { DonutService } from '../../services/donut.service';
+import { DonutFormComponent } from '../../components/donut-form/donut-form.component';
 
 @Component({
+  standalone: true,
+  imports: [DonutFormComponent],
+  providers: [DonutService],
   selector: 'app-donut-single',
   template: `
     <div>

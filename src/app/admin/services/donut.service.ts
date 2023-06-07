@@ -5,10 +5,7 @@ import { catchError, delay, map, of, retryWhen, take, tap, throwError } from 'rx
 
 import { Donut } from '../models/donut.model';
 
-
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable()
 export class DonutService {
   private donuts: Donut[] = [];
 
